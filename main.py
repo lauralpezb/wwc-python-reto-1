@@ -11,7 +11,7 @@ def limpiar_stop_words(texto_a_limpiar):
     Pista: necesitaras las funciones .split() y .join() para convertir el texto a lista y viceversa
     """
     # Escribe tu código aquí.
-
+    texto_a_limpiar = " ".join([nuevo_texto for nuevo_texto in texto_a_limpiar.split() if nuevo_texto not in stopwords]).lower()
     return texto_a_limpiar
 
 
